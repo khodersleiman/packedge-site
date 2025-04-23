@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PackEdge Logistics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: linear-gradient(to right, #16213e, #0f3460);
+            overflow-x: hidden;
+            padding-bottom: 100px;
+        }
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 5px;
+            background: #00c6ff;
+            z-index: 1000;
+            transition: width 0.2s ease-out;
+        }
+        .typewriter h1::after {
+            content: '';
+            animation: none;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            margin: auto;
+            padding: 4rem 2rem;
+            background-color: rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+        h1, h2 {
+            text-align: center;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        a.button {
+            display: inline-block;
+            margin: 1rem 0.5rem;
+            padding: 14px 28px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        a.button:hover {
+            transform: scale(1.05);
+        }
+        .highlight-section {
+            background-color: rgba(255,255,255,0.05);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+        }
+        .toggle-section {
+            background-color: rgba(255,255,255,0.05);
+            margin-bottom: 3rem;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .toggle-title {
+            padding: 1.5rem;
+            font-weight: bold;
+        }
+        .toggle-content {
+            padding: 1rem 1.5rem 2rem 1.5rem;
+            color: #e0e0e0;
+            display: none;
+            animation: slideDown 0.3s ease forwards;
+        }
+        .toggle-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .counter-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .counter {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .counter span {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00c6ff;
+            display: block;
+        }
+        .counter p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: #eee;
+        }
+        .testimonial {
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            font-style: italic;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .testimonial span {
+            display: block;
+            margin-top: 0.75rem;
+            font-style: normal;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+        .cta-footer {
+            background-color: #0f3460;
+            text-align: center;
+            padding: 3rem;
+            margin-top: 4rem;
+            border-radius: 12px;
+        }
+        .sticky-footer {
+            position: fixed;
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <div id="progress-bar"></div>
+
+    <div class="container">
+        <div class="typewriter" data-aos="fade-up">
+            <h1 id="typewriter-text"></h1>
+        </div>
+
+        <p style="text-align:center; margin-bottom: 3rem;" data-aos="fade-up">
+            We help eComm brands level up with smarter, faster, better packaging — backed by real U.S. suppliers.
+        </p>
+
+        <div style="text-align:center; margin-bottom: 4rem;" data-aos="fade-up">
+            <a href="tel:+19518470723" class="button">📞 Call Now</a>
+            <a href="mailto:Kasleiman5@gmail.com" class="button">✉️ Email Us</a>
+            <a href="https://calendly.com/khodersleiman54/30min" class="button" target="_blank">🚀 Schedule a Call</a>
+        </div>
+
+        <div class="highlight-section" data-aos="fade-up">
+            <h2>What We Deliver</h2>
+            <div class="toggle-section">
+                <div class="toggle-title">📦 U.S.-Sourced Packaging (No More Delays)</div>
+                <div class="toggle-content">
+                    <img src="static/us_packaging.jpg" alt="U.S. packaging warehouse">
+                    We connect you directly with reliable U.S. packaging suppliers so you avoid overseas delays and communication issues.
+                </div>
+            </div>
+            <div class="toggle-section">
+                <div class="toggle-title">📊 Monthly Restock Planning</div>
+                <div class="toggle-content">
+                    <img src="static/restock_planning.jpg" alt="Inventory planning and analytics">
+                    We monitor your usage trends and help schedule monthly reorders so you never run out of packaging mid-month.
+                </div>
+            </div>
+            <div class="toggle-section">
+                <div class="toggle-title">🧰 Custom-Fit Boxes, Tape & Labels</div>
+                <div class="toggle-content">
+                    <img src="static/custom_boxes.jpg" alt="Custom boxes and labels">
+                    We design boxes that fit your products perfectly — with custom logos, inserts, tape, and branded labels.
+                </div>
+            </div>
+            <div class="toggle-section">
+                <div class="toggle-title">♻️ Eco-Friendly Options Available</div>
+                <div class="toggle-content">
+                    <img src="static/eco_warehouse.jpg" alt="Eco-friendly warehouse and shipping">
+                    From biodegradable boxes with recycling icons to nature-filled warehouses, we offer sustainable solutions that align with your values.
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-section" data-aos="fade-up">
+            <h2>By the Numbers</h2>
+            <div class="counter-grid">
+                <div class="counter">
+                    <span data-count="5763">0</span>
+                    <p>Boxes Delivered</p>
+                </div>
+                <div class="counter">
+                    <span data-count="98">0</span>
+                    <p>% On-Time Delivery</p>
+                </div>
+                <div class="counter">
+                    <span data-count="97">0</span>
+                    <p>eComm Brands Helped</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-section testimonial-section" data-aos="fade-up">
+            <h2>What Our Partners Are Saying</h2>
+            <div class="testimonial">
+                <p>“Our fulfillment process got way smoother — we don’t even think about boxes anymore.”</p>
+                <span>— 7-Figure Skincare Brand Owner</span>
+            </div>
+            <div class="testimonial">
+                <p>“Fast turnaround, zero stress. Their U.S. supplier connections are the real deal.”</p>
+                <span>— Founder, Activewear Brand</span>
+            </div>
+            <div class="testimonial">
+                <p>“I wish we found this sooner. We’ve cut our packaging delays by more than half.”</p>
+                <span>— Ops Lead, Subscription Box Co.</span>
+            </div>
+        </div>
+
+        <div class="cta-footer" data-aos="fade-up">
+            <h2>Ready to simplify your packaging and scale your brand?</h2>
+            <p>Click below to schedule a free 30-min call. No pressure — just strategy.</p>
+            <a href="https://calendly.com/khodersleiman54/30min" class="button" target="_blank">📅 Book Your Free Call</a>
+        </div>
+    </div>
+
+    <div class="sticky-footer">
+        <a href="https://calendly.com/khodersleiman54/30min" class="button" target="_blank">📅 Book Free Strategy Call</a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+
+        const toggles = document.querySelectorAll('.toggle-title');
+        toggles.forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                if (content.style.display === 'block') {
+                    content.style.animation = 'slideDown 0.3s ease forwards';
+                }
+            });
+        });
+
+        const text = "Packaging Solutions You Can Count On — So You Can Focus on Scaling Your Brand.";
+        const typeTarget = document.getElementById('typewriter-text');
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                typeTarget.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 30);
+            }
+        }
+        typeEffect();
+
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter span');
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-count');
+                    const current = +counter.innerText;
+                    const increment = Math.ceil(target / 100);
+                    if (current < target) {
+                        counter.innerText = Math.min(current + increment, target);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        let countersStarted = false;
+        window.addEventListener('scroll', () => {
+            const section = document.querySelector('.counter-grid');
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < window.innerHeight && !countersStarted) {
+                countersStarted = true;
+                animateCounters();
+            }
+        });
+    </script>
+</body>
+</html>
